@@ -1,0 +1,18 @@
+Position
+=========
+
+The "position" property can help you manipulate the location of an element.
+
+
+Relative
+=========
+
+What it really means is "relative to itself". 
+
+If you set position: relative; on an element but no other positioning attributes (top, left, bottom or right), it will no effect on it's positioning at all, it will be exactly as it would be if you left it as position: static; But if you do give it some other positioning attribute, say, top: 10px;, it will shift its position 10 pixels down from where it would normally be.
+
+There are two other things that happen when you set position: relative; on an element that you should be aware of. One is that it introduces the ability to use z-index on that element, which doesn't really work with statically positioned elements. Even if you don't set a z-index value, this element will now appear on top of any other statically positioned element. You can't fight it by setting a higher z-index value on a statically positioned element. The other thing that happens is it limits the scope of absolutely positioned child elements. Any element that is a child of the relatively positioned element can be absolutely positioned within that block. This brings up some powerful opportunities which I talk about here.
+
+
+
+Instead of basing the position of the element upon the browser view port, it starts from where the element would be if it were still in the normal flow.

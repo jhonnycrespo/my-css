@@ -1,0 +1,17 @@
+Element width and height
+========================
+
+Until now we've let the browser decide how big the element is, but you can actually adjust its width and height manually.
+
+
+You can use pixel values for both width and height, but you'll most often want to use percentages to set these so that your elements grow and shrink as appropriate based on the screen size.
+
+Things are a bit more complicated with using a percentage to set an element's height. This is because typically the body's height is not specified, so if you use a percentage the size won't adjust.
+
+
+min-width, max-width, min-height and max-height
+===============================================
+
+Setting width and height with percentages will save you work because your design will automatically optimize for the user's screen size. However, some elements can't grow and shrink as dynamically as text can.
+
+For example, images will get "pixelated" if you let them grow too large, and they can look really distorted. Thankfully, you can set max and min width and heights. This way, you can set a range for your image to grow and shrink where you know it will still look good.

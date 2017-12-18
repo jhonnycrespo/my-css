@@ -1,0 +1,30 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+
+.container-relative {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background: gray;
+    left: 100px;
+    top: 50px;
+}
+
+.square-absolute {
+    width: 100px;
+    height: 100px;
+    background: blue;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
